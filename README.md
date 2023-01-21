@@ -10,5 +10,5 @@ Than, it gets a cosmic ships from server and print they parameters to stdout.
 RUN : python3 .\reporting_client.py "17 45 40.0409 -29 00 28.118"
 
 Client v.2:   
-Parses cosmic ships before printing.  
+Checks cosmic ships before printing.  
 RUN : python3 .\reporting_client_v2.py "17 45 40.0409 -29 00 28.118"
