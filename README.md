@@ -1,11 +1,14 @@
 # simple-grpc
 
-For test task:
-1.Proto files
-python3 -m grpc_tools.protoc -I protos --python_out=. --grpc_python_out=. protos/ships.proto
-
-2. Server
+Server.  
+This grpc-server get a galactic coordinates from client and returns 10 cosmic ships, which located  in this galaxy.  
 python3 .\reporting_server.py
 
-3. Client (other terminal)
+Client v.1:  
+Takes coordinates from stdin and send it to server.  
+Than, it gets a cosmic ships from server and print they parameters to stdout.  
 python3 .\reporting_client.py "17 45 40.0409 -29 00 28.118"
+
+Client v.2:   
+Parses cosmic ships before printing.  
+python3 .\reporting_client_v2.py "17 45 40.0409 -29 00 28.118"
